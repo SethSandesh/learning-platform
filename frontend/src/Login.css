@@ -1,0 +1,19 @@
+.login-card-3d {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transform: rotateY(10deg) rotateX(5deg); /* Tilt for 3D appearance */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 6px 10px rgba(0, 0, 0, 0.15); /* Create a 3D shadow effect */
+    border: none; /* Remove border for a clean look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .login-card-3d:hover {
+    transform: rotateY(0deg) rotateX(0deg) scale(1.05); /* Add scale and rotation for hover effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 10px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .card {
+    border-radius: 15px; /* Give the card rounded corners */
+    background: #fff; /* Card background color */
+  }
+  

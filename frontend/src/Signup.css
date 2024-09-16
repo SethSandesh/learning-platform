@@ -1,0 +1,71 @@
+.signup-page {
+  background: linear-gradient(to right, #a4508b, #f15a22); /* Gradient from purple to red */
+  min-height: 100vh; /* Ensure the background covers the full viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* 3D Signup Card with Gradient Background */
+.signup-card-3d {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: rotateY(10deg) rotateX(5deg); /* Tilt for 3D appearance */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 6px 10px rgba(0, 0, 0, 0.15); /* Create a 3D shadow effect */
+  background: #fff; /* White background for the card */
+  border: none; /* Remove border for a clean look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-card-3d:hover {
+  transform: rotateY(0deg) rotateX(0deg) scale(1.05); /* Add scale and rotation for hover effect */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 10px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Card container styling */
+.card {
+  border-radius: 15px; /* Give the card rounded corners */
+  background: #fff; /* Card background color */
+}
+
+/* Media Queries for Different Screen Sizes */
+
+/* For small screens like smartphones (up to 600px) */
+@media (max-width: 600px) {
+  .signup-card-3d {
+      transform: rotateY(5deg) rotateX(3deg); /* Slightly reduce the 3D tilt */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Softer shadow for small screens */
+  }
+
+  .signup-card-3d:hover {
+      transform: rotateY(0deg) rotateX(0deg) scale(1.03); /* Slightly reduce hover effect */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.1); /* Adjusted shadow for small screens */
+  }
+}
+
+/* For medium screens like tablets (600px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .signup-card-3d {
+      transform: rotateY(8deg) rotateX(4deg); /* Adjust the 3D tilt */
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25); /* Medium shadow for tablet screens */
+  }
+
+  .signup-card-3d:hover {
+      transform: rotateY(0deg) rotateX(0deg) scale(1.04); /* Hover effect for medium screens */
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.32), 0 8px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+}
+
+/* For large screens (above 900px) */
+@media (min-width: 901px) {
+  .signup-card-3d {
+      transform: rotateY(10deg) rotateX(5deg); /* Full 3D tilt for large screens */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 6px 10px rgba(0, 0, 0, 0.15); /* Full shadow for large screens */
+  }
+
+  .signup-card-3d:hover {
+      transform: rotateY(0deg) rotateX(0deg) scale(1.05); /* Full hover effect for large screens */
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 10px 15px rgba(0, 0, 0, 0.2); /* Strongest shadow on hover */
+  }
+}

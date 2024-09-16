@@ -1,0 +1,142 @@
+/* General page styling for Test.js */
+.test-page body {
+    background:rgb(161, 242, 200);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #0373e3;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .test-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .test-page h3 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 30px;
+  }
+  
+  /* Buttons for selecting test */
+  .test-page button {
+    background-color: #ff7f50;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 12px 30px;
+    border: none;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .test-page button:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+  }
+  
+  .test-page button:focus {
+    outline: none;
+  }
+  
+  /* Form styling */
+  .test-page form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+  }
+  
+  .test-page form label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .test-page form input {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  /* Results styling */
+  .test-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .test-page ul li {
+    background-color: #e6e6e6;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .test-page .correct-answer {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .test-page .wrong-answer {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  .test-page .score {
+    font-size: 26px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .test-page h1 {
+      font-size: 28px;
+    }
+  
+    .test-page button {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .test-page form {
+      padding: 20px;
+    }
+  
+    .test-page ul li {
+      font-size: 16px;
+    }
+  
+    .test-page .score {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .test-page h1 {
+      font-size: 24px;
+    }
+  
+    .test-page button {
+      font-size: 16px;
+      padding: 12px;
+    }
+  
+    .test-page ul li {
+      font-size: 14px;
+    }
+  
+    .test-page .score {
+      font-size: 18px;
+    }
+  }
+  

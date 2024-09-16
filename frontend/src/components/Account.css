@@ -1,0 +1,94 @@
+/* Account.css */
+
+/* Apply gradient background to the entire page */
+.account-page {
+  background: linear-gradient(to right, #ff6f61, #d8336a); /* Red and purple gradient */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Style the account card */
+.account-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Style the form elements */
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style the form labels */
+.form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the buttons */
+.btn {
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Style the alert messages */
+.alert {
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Style the delete confirmation modal */
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-footer .btn {
+  border-radius: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .account-card {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-control {
+    font-size: 0.875rem;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+  }
+}

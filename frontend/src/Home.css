@@ -1,0 +1,140 @@
+/* Home.css */
+
+.MainBody {
+  background:linear-gradient(to right, #d4a0ef, #96dfec);
+}
+
+
+/* Background and Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: rgb(255, 251, 251);
+  padding: 4rem 0;
+}
+
+.welcome-message h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-message p {
+  font-size: 1.2rem;
+}
+
+.blog-carousel .carousel-item {
+  padding: 0 15px;
+}
+
+.programming-info {
+  background: #f7f7f7;
+  padding: 2rem 0;
+}
+
+/* Footer */
+footer {
+  background: #343a40;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #ff7e5f;
+}
+
+.bi {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.bi:hover {
+  color: #ff7e5f;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 576px (phones) */
+@media (max-width: 576px) {
+  .welcome-message h1 {
+    font-size: 1.8rem;
+  }
+
+  .welcome-message p {
+    font-size: 1rem;
+  }
+
+  .blog-carousel .carousel-item {
+    padding: 0;
+  }
+
+  .programming-info {
+    padding: 1.5rem 0;
+  }
+
+  .bi {
+    font-size: 1.2rem;
+  }
+}
+
+/* For screens between 576px and 768px (tablets) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .welcome-message h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-message p {
+    font-size: 1.1rem;
+  }
+
+  .blog-carousel .carousel-item {
+    padding: 0 10px;
+  }
+
+  .programming-info {
+    padding: 1.5rem 0;
+  }
+
+  .bi {
+    font-size: 1.4rem;
+  }
+}
+
+/* For screens between 768px and 992px (small desktops) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .welcome-message h1 {
+    font-size: 2.2rem;
+  }
+
+  .welcome-message p {
+    font-size: 1.2rem;
+  }
+
+  .blog-carousel .carousel-item {
+    padding: 0 12px;
+  }
+
+  .programming-info {
+    padding: 1.5rem 0;
+  }
+}
+
+/* For screens larger than 992px (large desktops) */
+@media (min-width: 992px) {
+  .welcome-message h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome-message p {
+    font-size: 1.2rem;
+  }
+
+  .blog-carousel .carousel-item {
+    padding: 0 15px;
+  }
+
+  .programming-info {
+    padding: 2rem 0;
+  }
+}
